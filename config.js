@@ -120,7 +120,7 @@ const SITE = {
 
     // "Download CV" button → put your real PDF at assets/cv.pdf (keep the name).
     // Not got a CV? Set show: false to hide the button.
-    cv: { show: true, label: "Download Resume", file: "assets/G_Coleman_Resume.pdf" },
+    cv: { show: true, label: "Download Resume", file: "assets/cv.pdf" },
 
     // The "At a glance" card on the right. Each row scrolls to a section.
     // icon names: user · briefcase · graduation · wrench · folder · pen · map-pin · mail
@@ -143,15 +143,15 @@ const SITE = {
      The "id" must stay the same (the code matches content to it). */
   sections: [
     { id: "about",        nav: "About",        show: true  },
-    { id: "now",          nav: "Now",          show: true  },  // safe to delete
+    { id: "now",          nav: "Now",          show: false  },  // safe to delete
     { id: "stats",        nav: "Highlights",   show: false },  // safe to delete · "by the numbers" — set true to show
     { id: "experience",   nav: "Experience",   show: true  },
     { id: "education",    nav: "Education",     show: true  },
     { id: "skills",       nav: "Skills",       show: true  },
     { id: "projects",     nav: "Projects",     show: true  },
-    { id: "gallery",      nav: "Gallery",      show: true  },  // safe to delete · photo grid
-    { id: "writing",      nav: "Writing",      show: true  },  // safe to delete
-    { id: "testimonials", nav: "References",   show: true  },  // safe to delete
+    { id: "gallery",      nav: "Gallery",      show: false  },  // safe to delete · photo grid
+    { id: "writing",      nav: "Writing",      show: false  },  // safe to delete
+    { id: "testimonials", nav: "References",   show: false  },  // safe to delete
     { id: "contact",      nav: "Contact",      show: true  },
   ],
 
@@ -173,9 +173,9 @@ const SITE = {
     // Optional quick facts. Delete a line to hide it, or set quickFacts: [] to hide all.
     quickFacts: [
       { label: "Location",  value: "Your City, Country" },  // 👉 EDIT
-      { label: "Pronouns",  value: "they/them" },           // 👉 EDIT (or delete this line)
+      { label: "Pronouns",  value: "she/her/hers" },           // 👉 EDIT (or delete this line)
       { label: "Languages", value: "English" },             // 👉 EDIT
-      { label: "Email",     value: "hello@example.com" },   // 👉 EDIT
+      { label: "Email",     value: "gabbycoleman96@gmail.com" },   // 👉 EDIT
     ],
   },
 
