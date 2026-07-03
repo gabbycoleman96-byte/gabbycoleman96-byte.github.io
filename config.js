@@ -62,7 +62,7 @@ const SITE = {
      show: false to remove it for good. (Visitors can also click ✕ to
      hide it in their own browser.) */
   guide: {
-    show: true,              // 👉 EDIT — set to false when you're done setting up
+    show: false,              // 👉 EDIT — set to false when you're done setting up
   },
 
   /* ===================================================================
@@ -72,7 +72,7 @@ const SITE = {
      templates, get help, and share the site you build. It appears in
      the "Start here" box while you set up. Set show: false to hide it. */
   community: {
-    show: true,
+    show: false,
     label: "Portfolio Community",
     url: "https://example.com/portfolio-community",   // 👉 EDIT — the community's web address
   },
@@ -86,7 +86,7 @@ const SITE = {
         url: "https://gabbycoleman96-byte.github.io/",   // 👉 EDIT — your live web address
         title: "Gabby Coleman | Data Analyst Portfolio",   // 👉 EDIT — shows in the browser tab & Google
     description:                                          // 👉 EDIT — 1 sentence Google shows under your title
-      "Data Analyst specializing in SQL, Python, Tableau, and data visualization projects.",
+      "Data Analyst Portfolio of Gabby Coleman featuring SQL, Python, Tableau, Power BI, ETL pipelines, and business intelligence projects.",
     ogImage: "assets/img/og-image.svg",   // 👉 EDIT — the picture shown when your link is shared (1200×630)
     locale: "en",                          // language code, e.g. "en", "pt", "da"
   },
@@ -105,14 +105,14 @@ const SITE = {
      ===== HERO  (the big first screen — your headline moment) ========
      =================================================================== */
   hero: {
-    statusText: "Open to Remote Data Analyst Opportunities",  // 👉 EDIT — e.g. "Based in your city" or "Open to freelance"
+    statusText: "Open to Remote Data Analyst & Business Intelligence Opportunities",  // 👉 EDIT — e.g. "Based in your city" or "Open to freelance"
     statusOpen: true,                  // true = green dot, false = grey dot
     eyebrow: "Hi, my name is",         // the small line above your name
     name: "Gabby Coleman",                  // 👉 EDIT — your full name
     nameHighlight: "Coleman",              // part of your name to underline in the accent colour ("" for none)
     tagline:                           // 👉 EDIT — one or two sentences about you
-      "I build data projects that turn messy datasets into clear insights using SQL, Python, Tableau, and automation. I'm currently expanding my analytics portfolio while seeking my first full-time data analyst role.",
-    typewriter: false,                 // OPTIONAL typing animation on the name (off under reduced-motion)
+      "I'm a data analyst passionate about transforming messy data into meaningful insights. I build end-to-end analytics projects using SQL, Python, Tableau, Power BI, and Git, combining data engineering, visualization, and storytelling to solve real-world business problems.",
+    typewriter: true,                 // OPTIONAL typing animation on the name (off under reduced-motion)
 
     // The two buttons under your tagline. The "href" jumps to a section.
     primaryCta:   { label: "View Projects", href: "#projects" },  // 👉 EDIT
@@ -165,14 +165,14 @@ const SITE = {
     // Each item in this list becomes a paragraph. Write a few genuine
     // sentences about yourself. Add or remove paragraphs freely.
     paragraphs: [
-      "I'm a data analytics professional transitioning from workforce development into business intelligence and analytics. I enjoy cleaning messy data, building automated pipelines, designing dashboards, and finding patterns hidden inside large datasets.",
-      "My recent projects include building a Spotify listening analytics database with Python, SQL, and Tableau, along with portfolio projects analyzing HR attrition and genomic datasets.",
-      "I'm especially interested in data engineering, dashboard development, and process automation, and I'm always looking for ways to make complex information easier to understand.",
+      "I'm transitioning into data analytics after building a career in operations, compliance, and workforce development. Throughout my career I've been drawn to solving problems with data, improving processes, and finding patterns others overlook.",
+      "Today I focus on building portfolio projects that mirror real business scenarios, including automated ETL pipelines, SQL databases, interactive dashboards, and large-scale data analysis.",
+      "My goal is to help organizations make smarter decisions through clean data and clear visualizations.",
     ],
     interests: ["Data Analytics", "Python", "SQL", "Tableau", "Music", "Learning"], // 👉 EDIT — your tag chips
     // Optional quick facts. Delete a line to hide it, or set quickFacts: [] to hide all.
     quickFacts: [
-      { label: "Location",  value: "Your City, Country" },  // 👉 EDIT
+      { label: "Location",  value: "Indiana, USA (Open to Remote Work)" },  // 👉 EDIT
       { label: "Pronouns",  value: "she/her/hers" },           // 👉 EDIT (or delete this line)
       { label: "Languages", value: "English" },             // 👉 EDIT
       { label: "Email",     value: "gabbycoleman96@gmail.com" },   // 👉 EDIT
@@ -226,22 +226,23 @@ const SITE = {
       {
         title: "Career Coach",                 // 👉 EDIT
         org: "Equus Workforce Solutions",                      // 👉 EDIT
-        dates: "2024 — Present",                      // 👉 EDIT
+        dates: "August 2024 — Present",                      // 👉 EDIT
         logo: "",
         bullets: [
-          "Helped plan and run projects from first idea to finished result.",
-          "Brought a calmer, simpler way of working to a busy team.",
-          "Grew the community around what we do.",
+          "Manage a caseload of 30–60 participants while consistently maintaining quality assurance scores above 90%.",
+          "Analyze participant progress, documentation, and performance metrics to support employment outcomes.",
+          "Maintain accurate records, ensure compliance with program requirements, and identify process improvements through detailed data tracking.",
         ],
       },
       {
         title: "Eligibility Specialist",
         org: "MAXIMUS",
-        dates: "2023 — 2024",
+        dates: "March 2023 — July 2024",
         logo: "",
         bullets: [
-          "Supported the team across a bit of everything.",
-          "Learned to work closely with people in lots of different roles.",
+          "Evaluated complex eligibility documentation while maintaining high accuracy standards.",
+          "Managed sensitive data and verified information across multiple systems.",
+          "Balanced productivity goals with strict compliance requirements in a fast-paced environment.",
         ],
       },
     ],
@@ -306,7 +307,7 @@ const SITE = {
         featured: true,
         title: "Spotify Listening Analytics Dashboard",                               // 👉 EDIT
         description:                                                  // 👉 EDIT
-          "A collaborative cookbook bringing together favourite recipes from friends and neighbours. I gathered the contributions and designed the layout — my proudest little side project.",
+          "Designed and built an end-to-end analytics pipeline that processes over 800,000 Spotify listening records using Python and MySQL before visualizing trends in Tableau. The project explores listening habits across artists, albums, genres, seasons, days, and hours through an interactive dashboard.",
         image: "assets/img/project-1.svg",                           // 👉 EDIT — 1200×750 works well
         tags: ["Design", "Community", "Writing"],                    // 👉 EDIT
         links: [
@@ -318,7 +319,7 @@ const SITE = {
         featured: false,
         title: "Genomic Data Analysis",
         description:
-          "A small blog where I write about what I'm learning. A nice way to keep track of ideas and share them with others.",
+          "Cleaned and analyzed over one million genomic records using SQL to identify inheritance patterns and summarize complex biological datasets through optimized database queries and custom analytical tables.",
         image: "assets/img/project-2.svg",
         tags: ["Writing", "Web"],
         links: [
@@ -330,7 +331,7 @@ const SITE = {
         featured: false,
         title: "HR Attrition Analysis",
         description:
-          "A year-long personal project documenting my city, one photo a week. It taught me patience and a good eye for light.",
+          "Built an interactive HR analytics dashboard using SQL and Tableau to identify employee turnover trends, workforce demographics, and key factors associated with attrition through KPI tracking and visual analysis.",
         image: "assets/img/project-3.svg",
         tags: ["Photography", "Personal"],
         links: [
@@ -414,7 +415,7 @@ const SITE = {
   contact: {
     intro: "Say hello",
     heading: "Let's connect",                       // 👉 EDIT
-    text: "I'm always happy to chat — about work, ideas, or just to say hi. Drop me a line and I'll get back to you.", // 👉 EDIT
+    text: "I'm currently seeking remote Data Analyst and Business Intelligence opportunities where I can help transform data into actionable insights. If you'd like to discuss opportunities or collaborate on a project, I'd love to connect.", // 👉 EDIT
     email: "gabbycoleman96@gmail.com",                     // 👉 EDIT — your email address
     emailButtonLabel: "Send me an email",
 
@@ -438,9 +439,9 @@ const SITE = {
     // repo so visitors can see the code or give it a ⭐. Set url to "" to hide.
     repo: {
       label: "View the code on GitHub",     // 👉 EDIT
-      url: "https://github.com/your-username/your-repo",  // 👉 EDIT — your repo (or "" to hide)
+      url: "https://github.com/gabbycoleman96-byte",  // 👉 EDIT — your repo (or "" to hide)
     },
-    showCredit: true,   // the small "Built with the Starter portfolio template" line — set false to remove
+    showCredit: false,   // the small "Built with the Starter portfolio template" line — set false to remove
   },
 
   /* ===================================================================
