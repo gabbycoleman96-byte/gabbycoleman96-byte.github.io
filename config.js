@@ -302,7 +302,7 @@ const SITE = {
     items: [
       {
         featured: true,
-        title: "Community Recipe Book",                               // 👉 EDIT
+        title: "Spotify Listening Analytics Dashboard",                               // 👉 EDIT
         description:                                                  // 👉 EDIT
           "A collaborative cookbook bringing together favourite recipes from friends and neighbours. I gathered the contributions and designed the layout — my proudest little side project.",
         image: "assets/img/project-1.svg",                           // 👉 EDIT — 1200×750 works well
@@ -314,7 +314,7 @@ const SITE = {
       },
       {
         featured: false,
-        title: "Personal Blog",
+        title: "Genomic Data Analysis",
         description:
           "A small blog where I write about what I'm learning. A nice way to keep track of ideas and share them with others.",
         image: "assets/img/project-2.svg",
@@ -326,7 +326,7 @@ const SITE = {
       },
       {
         featured: false,
-        title: "Photography Series",
+        title: "HR Attrition Analysis",
         description:
           "A year-long personal project documenting my city, one photo a week. It taught me patience and a good eye for light.",
         image: "assets/img/project-3.svg",
@@ -413,7 +413,7 @@ const SITE = {
     intro: "Say hello",
     heading: "Let's connect",                       // 👉 EDIT
     text: "I'm always happy to chat — about work, ideas, or just to say hi. Drop me a line and I'll get back to you.", // 👉 EDIT
-    email: "hello@example.com",                     // 👉 EDIT — your email address
+    email: "gabbycoleman96@gmail.com",                     // 👉 EDIT — your email address
     emailButtonLabel: "Send me an email",
 
     // OPTIONAL contact form (an add-on). It is OFF by default because it
@@ -450,11 +450,9 @@ const SITE = {
        bluesky · youtube · codepen · globe (website) · mail (email)
      For "mail", write the address with mailto:  — see below. */
   social: [
-    { icon: "github",   label: "GitHub",   url: "https://github.com/your-username" },   // 👉 EDIT
-    { icon: "linkedin", label: "LinkedIn", url: "https://linkedin.com/in/your-name" },  // 👉 EDIT
-    { icon: "instagram",label: "Instagram",url: "https://instagram.com/your-handle" },  // 👉 EDIT
-    { icon: "globe",    label: "Website",  url: "" },                                    // 👉 EDIT (add a url to show)
-    { icon: "mail",     label: "Email",    url: "mailto:hello@example.com" },            // 👉 EDIT
+    { icon: "github",   label: "GitHub",   url: "https://github.com/gabbycoleman96-byte" },   // 👉 EDIT
+    { icon: "linkedin", label: "LinkedIn", url: "https://linkedin.com/in/gabrielle-coleman-5163ba151" },  // 👉 EDIT
+    { icon: "mail",     label: "Email",    url: "gabbycoleman96@gmail.com" },            // 👉 EDIT
   ],
 
 };
