@@ -49,7 +49,7 @@ const SITE = {
      box on the website. Want fully custom colours? Open css/styles.css
      and edit the variables at the very top — the README shows you how. */
   theme: {
-    palette: "slate",        // 👉 EDIT — "slate" | "forest" | "sunset" | "violet"
+    palette: "violet",        // 👉 EDIT — "slate" | "forest" | "sunset" | "violet"
     defaultMode: "auto",     // "auto" follows the visitor's device · or force "light" / "dark"
     font: "system",          // "system" (fast, no download) or a Google Font name — see README
   },
@@ -83,10 +83,10 @@ const SITE = {
      Fill these in once your site is online. The url is the address
      people will visit (you get it from GitHub Pages — see the README). */
   site: {
-    url: "https://christian-y-wu.github.io/portfolio-starter-kit/",   // 👉 EDIT — your live web address
-    title: "Alex Doe — Personal Portfolio",              // 👉 EDIT — shows in the browser tab & Google
+        url: "https://gabbycoleman96-byte.github.io/",   // 👉 EDIT — your live web address
+        title: "Gabby Coleman | Data Analyst Portfolio",   // 👉 EDIT — shows in the browser tab & Google
     description:                                          // 👉 EDIT — 1 sentence Google shows under your title
-      "Welcome to my personal portfolio — my projects, my story, and how to get in touch.",
+      "Data Analyst specializing in SQL, Python, Tableau, and data visualization projects.",
     ogImage: "assets/img/og-image.svg",   // 👉 EDIT — the picture shown when your link is shared (1200×630)
     locale: "en",                          // language code, e.g. "en", "pt", "da"
   },
@@ -95,7 +95,7 @@ const SITE = {
      ===== NAVBAR  (the bar pinned to the top) ========================
      =================================================================== */
   nav: {
-    brand: "Alex Doe",       // 👉 EDIT — your name or logo text (top-left)
+    brand: "Gabby Coleman",       // 👉 EDIT — your name or logo text (top-left)
     showThemeToggle: true,   // the light/dark switch
     showDotRail: true,       // the little dots on the right that show which section you're in (set false to hide)
     commandPalette: true,    // the quick search (press Ctrl/⌘ + K or "/") — jump anywhere, switch theme, copy email
