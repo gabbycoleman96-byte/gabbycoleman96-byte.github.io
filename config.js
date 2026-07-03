@@ -287,10 +287,10 @@ const SITE = {
   skills: {
     intro: "What I bring to the table",
     groups: [
-      { name: "Strengths", items: ["Communication", "Teamwork", "Problem-solving", "Organisation"] }, // 👉 EDIT
-      { name: "Tools",     items: ["Office suite", "Email & calendars", "Notion", "Canva"] },          // 👉 EDIT
-      { name: "Languages", items: ["English", "Spanish"] },                                            // 👉 EDIT
-      { name: "Interests", items: ["Design", "Writing", "Photography"] },                              // 👉 EDIT
+      { name: "Analytics", items: ["Data Cleaning", "ETL", "Dashboard Design", "Data Visualization"] }, // 👉 EDIT
+      { name: "Tools",     items: ["GitHub", "VS Code", "Jupyter", "AI"] },          // 👉 EDIT
+      { name: "Languages", items: ["Python", "MySQL"] },                                            // 👉 EDIT
+      { name: "Visualization", items: ["Tableau", "Power BI", "Excel"] },                              // 👉 EDIT
     ],
   },
 
