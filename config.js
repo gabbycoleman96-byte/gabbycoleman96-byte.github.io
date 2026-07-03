@@ -244,6 +244,8 @@ const SITE = {
           "Learned to work closely with people in lots of different roles.",
         ],
       },
+    ],
+  },
      
 
   /* ===================================================================
@@ -452,7 +454,7 @@ const SITE = {
   social: [
     { icon: "github",   label: "GitHub",   url: "https://github.com/gabbycoleman96-byte" },   // 👉 EDIT
     { icon: "linkedin", label: "LinkedIn", url: "https://linkedin.com/in/gabrielle-coleman-5163ba151" },  // 👉 EDIT
-    { icon: "mail",     label: "Email",    url: "gabbycoleman96@gmail.com" },            // 👉 EDIT
+    { icon: "mail", label: "Email", url: "mailto:gabbycoleman96@gmail.com" },            // 👉 EDIT
   ],
 
 };
