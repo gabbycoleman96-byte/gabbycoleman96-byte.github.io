@@ -105,17 +105,17 @@ const SITE = {
      ===== HERO  (the big first screen — your headline moment) ========
      =================================================================== */
   hero: {
-    statusText: "Available for new opportunities",  // 👉 EDIT — e.g. "Based in your city" or "Open to freelance"
+    statusText: "Open to Remote Data Analyst Opportunities",  // 👉 EDIT — e.g. "Based in your city" or "Open to freelance"
     statusOpen: true,                  // true = green dot, false = grey dot
     eyebrow: "Hi, my name is",         // the small line above your name
-    name: "Alex Doe",                  // 👉 EDIT — your full name
-    nameHighlight: "Doe",              // part of your name to underline in the accent colour ("" for none)
+    name: "Gabby Coleman",                  // 👉 EDIT — your full name
+    nameHighlight: "Coleman",              // part of your name to underline in the accent colour ("" for none)
     tagline:                           // 👉 EDIT — one or two sentences about you
-      "Welcome to my corner of the web. I love creating things, learning new skills, and sharing the work I'm proud of. Have a look around.",
+      "I build data projects that turn messy datasets into clear insights using SQL, Python, Tableau, and automation. I'm currently expanding my analytics portfolio while seeking my first full-time data analyst role.",
     typewriter: false,                 // OPTIONAL typing animation on the name (off under reduced-motion)
 
     // The two buttons under your tagline. The "href" jumps to a section.
-    primaryCta:   { label: "View my work", href: "#projects" },  // 👉 EDIT
+    primaryCta:   { label: "View Projects", href: "#projects" },  // 👉 EDIT
     secondaryCta: { label: "About me",     href: "#about" },     // 👉 EDIT
 
     // "Download CV" button → put your real PDF at assets/cv.pdf (keep the name).
@@ -126,7 +126,7 @@ const SITE = {
     // icon names: user · briefcase · graduation · wrench · folder · pen · map-pin · mail
     glanceTitle: "At a glance",
     glance: [
-      { icon: "map-pin",   label: "Based in",   value: "Your City",   href: "#about" },      // 👉 EDIT
+      { icon: "map-pin",   label: "Based in",   value: "Indianapolis",   href: "#about" },      // 👉 EDIT
       { icon: "user",      label: "About",      value: "Who I am",    href: "#about" },      // 👉 EDIT
       { icon: "briefcase", label: "Experience", value: "My journey",  href: "#experience" }, // 👉 EDIT
       { icon: "folder",    label: "Projects",   value: "See my work", href: "#projects" },   // 👉 EDIT
