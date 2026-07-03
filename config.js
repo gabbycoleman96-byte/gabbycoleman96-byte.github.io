@@ -224,9 +224,9 @@ const SITE = {
     intro: "Where I've spent my time",
     items: [
       {
-        title: "Project Coordinator",                 // 👉 EDIT
-        org: "Evergreen Studio",                      // 👉 EDIT
-        dates: "2022 — Present",                      // 👉 EDIT
+        title: "Career Coach",                 // 👉 EDIT
+        org: "Equus Workforce Solutions",                      // 👉 EDIT
+        dates: "2024 — Present",                      // 👉 EDIT
         logo: "",
         bullets: [
           "Helped plan and run projects from first idea to finished result.",
@@ -235,26 +235,16 @@ const SITE = {
         ],
       },
       {
-        title: "Team Member",
-        org: "Northwind Co.",
-        dates: "2020 — 2022",
+        title: "Eligibility Specialist",
+        org: "MAXIMUS",
+        dates: "2023 — 2024",
         logo: "",
         bullets: [
           "Supported the team across a bit of everything.",
           "Learned to work closely with people in lots of different roles.",
         ],
       },
-      {
-        title: "Volunteer",
-        org: "Local Community Group",
-        dates: "2019 — 2020",
-        logo: "",
-        bullets: [
-          "Organised events and lent a hand wherever it was needed.",
-        ],
-      },
-    ],
-  },
+     
 
   /* ===================================================================
      ===== EDUCATION  (same timeline pattern, simpler) ================
@@ -263,18 +253,16 @@ const SITE = {
     intro: "Where I studied",
     items: [
       {
-        title: "Bachelor's Degree",         // 👉 EDIT
-        org: "City University",             // 👉 EDIT
-        dates: "2015 — 2019",               // 👉 EDIT
+        title: "Associate's Degree",         // 👉 EDIT
+        org: "Ivy Tech Community College",             // 👉 EDIT
+        dates: "2015 — 2017",               // 👉 EDIT
         logo: "",
-        bullets: ["Studied a subject I loved and made friends for life."],
       },
       {
-        title: "Online Certificate",
-        org: "An Online Academy",
-        dates: "2021",
+        title: "Google Data Analytics Professional Certificate",
+        org: "Coursera",
+        dates: "2026",
         logo: "",
-        bullets: [],
       },
     ],
   },
