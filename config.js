@@ -160,7 +160,7 @@ const SITE = {
      =================================================================== */
   about: {
     intro: "A little about me",                 // the short line under the section title
-    photo: "assets/img/portrait.svg",           // 👉 EDIT — your photo (square works best, ~600×600)
+    photo: "assets/img/portrait.jpg",           // 👉 EDIT — your photo (square works best, ~600×600)
     photoAlt: "A photo of Gabby Coleman",            // 👉 EDIT — describe the photo (for screen readers)
     // Each item in this list becomes a paragraph. Write a few genuine
     // sentences about yourself. Add or remove paragraphs freely.
