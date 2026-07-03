@@ -120,7 +120,7 @@ const SITE = {
 
     // "Download CV" button → put your real PDF at assets/cv.pdf (keep the name).
     // Not got a CV? Set show: false to hide the button.
-    cv: { show: true, label: "Download CV", file: "assets/cv.pdf" },
+    cv: { show: true, label: "Download Resume", file: "assets/G_Coleman_Resume.pdf" },
 
     // The "At a glance" card on the right. Each row scrolls to a section.
     // icon names: user · briefcase · graduation · wrench · folder · pen · map-pin · mail
@@ -161,15 +161,15 @@ const SITE = {
   about: {
     intro: "A little about me",                 // the short line under the section title
     photo: "assets/img/portrait.svg",           // 👉 EDIT — your photo (square works best, ~600×600)
-    photoAlt: "A photo of Alex Doe",            // 👉 EDIT — describe the photo (for screen readers)
+    photoAlt: "A photo of Gabby Coleman",            // 👉 EDIT — describe the photo (for screen readers)
     // Each item in this list becomes a paragraph. Write a few genuine
     // sentences about yourself. Add or remove paragraphs freely.
     paragraphs: [
-      "Hi, I'm Alex! I'm a curious person who loves learning new things, working on creative projects, and spending time with good people.",
-      "I care about doing thoughtful work and leaving things a little better than I found them. Away from the desk you'll usually find me reading, outdoors, or planning a small adventure.",
-      "This is my little corner of the internet — thanks for stopping by.",
+      "I'm a data analytics professional transitioning from workforce development into business intelligence and analytics. I enjoy cleaning messy data, building automated pipelines, designing dashboards, and finding patterns hidden inside large datasets.",
+      "My recent projects include building a Spotify listening analytics database with Python, SQL, and Tableau, along with portfolio projects analyzing HR attrition and genomic datasets.",
+      "I'm especially interested in data engineering, dashboard development, and process automation, and I'm always looking for ways to make complex information easier to understand.",
     ],
-    interests: ["Learning", "Travel", "Photography", "Music", "Reading", "Volunteering"], // 👉 EDIT — your tag chips
+    interests: ["Data Analytics", "Python", "SQL", "Tableau", "Music", "Learning"], // 👉 EDIT — your tag chips
     // Optional quick facts. Delete a line to hide it, or set quickFacts: [] to hide all.
     quickFacts: [
       { label: "Location",  value: "Your City, Country" },  // 👉 EDIT
