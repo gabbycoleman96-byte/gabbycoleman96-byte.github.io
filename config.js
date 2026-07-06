@@ -143,12 +143,12 @@ const SITE = {
      The "id" must stay the same (the code matches content to it). */
   sections: [
     { id: "about",        nav: "About",        show: true  },
+    { id: "projects",     nav: "Projects",     show: true  },
     { id: "now",          nav: "Now",          show: false  },  // safe to delete
     { id: "stats",        nav: "Highlights",   show: false },  // safe to delete · "by the numbers" — set true to show
     { id: "experience",   nav: "Experience",   show: true  },
     { id: "education",    nav: "Education",     show: true  },
     { id: "skills",       nav: "Skills",       show: true  },
-    { id: "projects",     nav: "Projects",     show: true  },
     { id: "gallery",      nav: "Gallery",      show: false  },  // safe to delete · photo grid
     { id: "writing",      nav: "Writing",      show: false  },  // safe to delete
     { id: "testimonials", nav: "References",   show: false  },  // safe to delete
