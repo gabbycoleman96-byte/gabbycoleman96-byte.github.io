@@ -285,9 +285,9 @@ const SITE = {
   skills: {
     intro: "What I bring to the table",
     groups: [
-      { name: "Analytics", items: ["Data Cleaning", "ETL", "Dashboard Design", "Data Visualization"] }, // 👉 EDIT
-      { name: "Tools",     items: ["GitHub", "VS Code", "Jupyter", "AI"] },          // 👉 EDIT
-      { name: "Languages", items: ["Python", "MySQL"] },                                            // 👉 EDIT
+      { name: "Analytics", items: ["Data Cleaning", "ETL", "Dashboard Design", "Data Visualization", "Data Quality"] }, // 👉 EDIT
+      { name: "Tools",     items: ["GitHub", "VS Code", "Jupyter", "AI", "MySQL"] },          // 👉 EDIT
+      { name: "Languages", items: ["Python", "SQL"] },                                            // 👉 EDIT
       { name: "Visualization", items: ["Tableau", "Power BI", "Excel"] },                              // 👉 EDIT
     ],
   },
