@@ -267,6 +267,12 @@ const SITE = {
         dates: "2026",
         logo: "",
       },
+      {
+        title: "Google AI Professional Certificate",
+        org: "Coursera",
+        dates: "2026",
+        logo: "",
+      },
     ],
   },
 
