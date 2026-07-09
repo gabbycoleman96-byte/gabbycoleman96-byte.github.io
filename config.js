@@ -126,7 +126,7 @@ const SITE = {
     // icon names: user · briefcase · graduation · wrench · folder · pen · map-pin · mail
     glanceTitle: "At a glance",
     glance: [
-      { icon: "map-pin",   label: "Based in",   value: "Indianapolis",   href: "#about" },      // 👉 EDIT
+      { icon: "map-pin",   label: "Based in",   value: "Indianapolis, IN",   href: "#about" },      // 👉 EDIT
       { icon: "user",      label: "About",      value: "Who I am",    href: "#about" },      // 👉 EDIT
       { icon: "briefcase", label: "Experience", value: "My journey",  href: "#experience" }, // 👉 EDIT
       { icon: "folder",    label: "Projects",   value: "See my work", href: "#projects" },   // 👉 EDIT
@@ -167,7 +167,8 @@ const SITE = {
     paragraphs: [
       "I'm transitioning into data analytics after building a career in operations, compliance, and workforce development. Throughout my career I've been drawn to solving problems with data, improving processes, and finding patterns others overlook.",
       "Today I focus on building portfolio projects that mirror real business scenarios, including automated ETL pipelines, SQL databases, interactive dashboards, and large-scale data analysis.",
-      "My goal is to help organizations make smarter decisions through clean data and clear visualizations.",
+      "My goal is to help organizations make smarter decisions through clean data and clear visualizations. I am experienced with HIPAA and PII/PHI regulated systems across state-contracted and corporate settings.",
+       "I am known for learning new systems quikly and being adaptable to changing workflows. I work well in independent, structured, remote-friendly environments.",
     ],
     interests: ["Data Analytics", "Python", "SQL", "Tableau", "Music", "Learning"], // 👉 EDIT — your tag chips
     // Optional quick facts. Delete a line to hide it, or set quickFacts: [] to hide all.
