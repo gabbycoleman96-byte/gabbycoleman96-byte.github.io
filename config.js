@@ -309,10 +309,10 @@ const SITE = {
         description:                                                  // 👉 EDIT
           "Designed and built an end-to-end analytics pipeline that processes over 800,000 Spotify listening records using Python and MySQL before visualizing trends in Tableau. The project explores listening habits across artists, albums, genres, seasons, days, and hours through an interactive dashboard.",
         image: "assets/img/project-1.svg",                           // 👉 EDIT — 1200×750 works well
-        tags: ["Design", "Community", "Writing"],                    // 👉 EDIT
+        tags: ["Spotify", "Python", "MySQL"],                    // 👉 EDIT
         links: [
           { type: "demo",   label: "Take a look", url: "https://example.com" },             // 👉 EDIT
-          { type: "source", label: "Details",     url: "https://example.com" },             // 👉 EDIT
+          { type: "source", label: "Details",     url: "https://github.com/gabbycoleman96-byte/spotify-listening-analytics" },             // 👉 EDIT
         ],
       },
       {
@@ -321,10 +321,10 @@ const SITE = {
         description:
           "Cleaned and analyzed over one million genomic records using SQL to identify inheritance patterns and summarize complex biological datasets through optimized database queries and custom analytical tables.",
         image: "assets/img/project-2.svg",
-        tags: ["Writing", "Web"],
+        tags: ["Genome", "MySQL"],
         links: [
           { type: "demo",   label: "Read it", url: "https://example.com" },
-          { type: "source", label: "Source",  url: "" },   // empty url = button hidden
+          { type: "source", label: "Details",  url: "https://github.com/gabbycoleman96-byte/genomic-variant-analysis" },   // empty url = button hidden
         ],
       },
       {
@@ -333,10 +333,10 @@ const SITE = {
         description:
           "Built an interactive HR analytics dashboard using SQL and Tableau to identify employee turnover trends, workforce demographics, and key factors associated with attrition through KPI tracking and visual analysis.",
         image: "assets/img/project-3.svg",
-        tags: ["Photography", "Personal"],
+        tags: ["Power BI", "MySQL"],
         links: [
-          { type: "demo",   label: "View gallery", url: "https://example.com" },
-          { type: "source", label: "Source",       url: "" },
+          { type: "demo",   label: "View gallery", url: "" },
+          { type: "source", label: "Details",       url: "https://github.com/gabbycoleman96-byte/hr-employee-attrition-analysis" },
         ],
       },
     ],
