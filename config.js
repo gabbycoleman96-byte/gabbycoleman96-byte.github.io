@@ -120,7 +120,7 @@ const SITE = {
 
     // "Download CV" button → put your real PDF at assets/cv.pdf (keep the name).
     // Not got a CV? Set show: false to hide the button.
-    cv: { show: true, label: "Download Resume", file: "assets/cv.pdf" },
+    cv: { show: true, label: "Download Resume", file: "assets/G_Coleman_Resume.pdf" },
 
     // The "At a glance" card on the right. Each row scrolls to a section.
     // icon names: user · briefcase · graduation · wrench · folder · pen · map-pin · mail
