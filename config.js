@@ -320,7 +320,7 @@ const SITE = {
         title: "Genomic Data Analysis",
         description:
           "Cleaned and analyzed over one million genomic records using SQL to identify inheritance patterns and summarize complex biological datasets through optimized database queries and custom analytical tables.",
-        image: "assets/img/project-2.svg",
+        image: "assets/img/density_column_chart.png",
         tags: ["Genome", "MySQL", "Power BI", "Data Cleaning"],
         links: [
           { type: "demo",   label: "Take a look", url: "" },
@@ -332,7 +332,7 @@ const SITE = {
         title: "HR Attrition Analysis",
         description:
           "Built an interactive HR analytics dashboard using SQL and Tableau to identify employee turnover trends, workforce demographics, and key factors associated with attrition through KPI tracking and visual analysis.",
-        image: "assets/img/project-3.svg",
+        image: "assets/img/dashboard_page2.png",
         tags: ["Power BI", "MySQL"],
         links: [
           { type: "demo",   label: "Take a look", url: "" },
@@ -344,7 +344,7 @@ const SITE = {
         title: "Exoplanet Data Analysis",
         description:
           "Analyzed over 2.4 million exoplanet observation records using MySQL, transforming raw astronomical data into optimized analytical tables. Cleaned, aggregated, and summarized complex datasets to uncover patterns while designing interactive Tableau visualizations to communicate scientific insights.",
-        image: "assets/img/project-3.svg",
+        image: "assets/img/scatter_plot.png",
         tags: ["Tableau", "MySQL", "Data Cleaning"],
         links: [
           { type: "demo",   label: "Take a look", url: "" },
