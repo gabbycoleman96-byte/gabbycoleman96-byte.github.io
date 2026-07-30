@@ -87,7 +87,7 @@ const SITE = {
         title: "Gabby Coleman | Data Analyst Portfolio",   // 👉 EDIT — shows in the browser tab & Google
     description:                                          // 👉 EDIT — 1 sentence Google shows under your title
       "Data Analyst Portfolio of Gabby Coleman featuring SQL, Python, Tableau, Power BI, ETL pipelines, and business intelligence projects.",
-    ogImage: "assets/img/og-image.svg",   // 👉 EDIT — the picture shown when your link is shared (1200×630)
+    ogImage: "assets/img/portfolio-image",   // 👉 EDIT — the picture shown when your link is shared (1200×630)
     locale: "en",                          // language code, e.g. "en", "pt", "da"
   },
 
@@ -315,7 +315,7 @@ const SITE = {
         title: "Spotify Listening Analytics Dashboard",                               // 👉 EDIT
         description:                                                  // 👉 EDIT
           "Designed and built an end-to-end analytics pipeline that processes over 800,000 Spotify listening records using Python and MySQL before visualizing trends in Tableau. The project explores listening habits across artists, albums, genres, seasons, days, and hours through an interactive dashboard.",
-        image: "assets/img/project-1.svg",                           // 👉 EDIT — 1200×750 works well
+        image: "assets/img/Spotify Dashboard Screenshot.png",                           // 👉 EDIT — 1200×750 works well
         tags: ["Spotify", "Python", "MySQL", "Tableau"],                    // 👉 EDIT
         links: [
           { type: "demo",   label: "Take a look", url: "" },             // 👉 EDIT
