@@ -1154,6 +1154,7 @@ esc((p.images && p.images[0]) || p.image || "assets/img/placeholder.svg") +
 // ==============================
 
 function initProjectSlideshows() {
+
   document.querySelectorAll(".project__media img").forEach(function(img) {
 
     const article = img.closest(".project");
@@ -1161,7 +1162,7 @@ function initProjectSlideshows() {
 
     const title = article.querySelector(".project__title")?.textContent;
 
-    const project = (SITE.projects.items || []).find(function(p) {
+    const project = (SITE.projects.items || []).find(function(p){
       return p.title === title;
     });
 
@@ -1169,20 +1170,46 @@ function initProjectSlideshows() {
 
     let current = 0;
 
-    setInterval(function () {
-   
-       img.style.opacity = 0;
-   
-       setTimeout(function () {
-           current = (current + 1) % project.images.length;
-           img.src = project.images[current];
-           img.style.opacity = 1;
-       }, 300);
-   
-   }, 6000);
-   
-     });
-   }
+    let timer = start();
+
+    function start(){
+
+      return setInterval(function(){
+
+        img.style.opacity = 0;
+
+        setTimeout(function(){
+
+          current = (current + 1) % project.images.length;
+          img.src = project.images[current];
+
+          img.style.opacity = 1;
+
+        },400);
+
+      },12000);
+
+    }
+
+    article.addEventListener("mouseenter",function(){
+
+      clearInterval(timer);
+
+    });
+
+    article.addEventListener("mouseleave",function(){
+
+      timer = start();
+
+    });
+
+     img.addEventListener("click", function () {
+      window.open(img.src, "_blank");
+    });
+
+  });
+
+}
 
 window.addEventListener("load", initProjectSlideshows);
 
