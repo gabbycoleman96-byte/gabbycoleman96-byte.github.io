@@ -451,8 +451,8 @@ textarea:focus-visible, [tabindex]:focus-visible {
 .project--featured { grid-column: 1 / -1; }
 @media (min-width: 760px) {
   .project--featured { flex-direction: row; }
-  .project--featured .project__media { aspect-ratio: auto; flex: 1 1 45%; border-bottom: none; border-right: 1px solid var(--border); }
-  .project--featured .project__body { flex: 1 1 55%; justify-content: center; gap: 0.9rem; }
+  .project--featured .project__media { aspect-ratio: auto; flex: 1 1 60%; border-bottom: none; border-right: 1px solid var(--border); }
+  .project--featured .project__body { flex: 1 1 40%; justify-content: center; gap: 0.9rem; }
   .project--featured .project__title { font-size: 1.45rem; }
 }
 
