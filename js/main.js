@@ -392,20 +392,10 @@
           '<article class="project ' + (p.featured ? "project--featured" : "") + '" data-tags="' + esc(tagKeys) + '">' +
             '<div class="project__media">' +
            
-            (
-                p.images && p.images.length
-                    ? p.images.map(function(img, index){
-                        return '<img class="project-slide' +
-                               (index === 0 ? ' active' : '') +
-                               '" src="' + esc(img) +
-                               '" alt="' + esc(p.title) +
-                               ' preview" loading="lazy">';
-                      }).join("")
-                    : '<img class="project-slide active" src="' +
-                      esc(p.image || "assets/img/placeholder.svg") +
-                      '" alt="' + esc(p.title) +
-                      ' preview" loading="lazy">'
-            )
+            '<img class="project-slide active" src="' +
+esc((p.images && p.images[0]) || p.image || "assets/img/placeholder.svg") +
+'" alt="' + esc(p.title) +
+' preview" loading="lazy">'
             
             +
 
@@ -1179,13 +1169,20 @@ function initProjectSlideshows() {
 
     let current = 0;
 
-    setInterval(function() {
-      current = (current + 1) % project.images.length;
-      img.src = project.images[current];
-    }, 6000);
-
-  });
-}
+    setInterval(function () {
+   
+       img.style.opacity = 0;
+   
+       setTimeout(function () {
+           current = (current + 1) % project.images.length;
+           img.src = project.images[current];
+           img.style.opacity = 1;
+       }, 300);
+   
+   }, 6000);
+   
+     });
+   }
 
 window.addEventListener("load", initProjectSlideshows);
 
