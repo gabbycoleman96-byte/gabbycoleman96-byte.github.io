@@ -315,7 +315,10 @@ const SITE = {
         title: "Spotify Listening Analytics Dashboard",                               // 👉 EDIT
         description:                                                  // 👉 EDIT
           "Designed and built an end-to-end analytics pipeline that processes over 800,000 Spotify listening records using Python and MySQL before visualizing trends in Tableau. The project explores listening habits across artists, albums, genres, seasons, days, and hours through an interactive dashboard.",
-        image: "assets/img/Spotify Dashboard Screenshot.png",                           // 👉 EDIT — 1200×750 works well
+        images: [
+             "assets/img/Spotify Dashboard Screenshot.png",
+             "assets/img/Spotify Dashboard Screenshot 1.png"
+         ],
         tags: ["Spotify", "Python", "MySQL", "Tableau"],                    // 👉 EDIT
         links: [
           { type: "demo",   label: "Take a look", url: "" },             // 👉 EDIT
