@@ -316,8 +316,8 @@ const SITE = {
         description:                                                  // 👉 EDIT
           "Designed and built an end-to-end analytics pipeline that processes over 800,000 Spotify listening records using Python and MySQL before visualizing trends in Tableau. The project explores listening habits across artists, albums, genres, seasons, days, and hours through an interactive dashboard.",
         images: [
-             "assets/img/Spotify Dashboard Screenshot.png",
-             "assets/img/Spotify Dashboard Screenshot 1.png"
+             "assets/img/Spotify Home Page.png",
+             "assets/img/Spotify The Headliners.png"
          ],
         tags: ["Spotify", "Python", "MySQL", "Tableau"],                    // 👉 EDIT
         links: [
