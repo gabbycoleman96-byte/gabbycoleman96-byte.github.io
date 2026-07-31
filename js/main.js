@@ -390,7 +390,26 @@
         const tagKeys = (p.tags || []).map(function (t) { return String(t).toLowerCase(); }).join("|");
         return (
           '<article class="project ' + (p.featured ? "project--featured" : "") + '" data-tags="' + esc(tagKeys) + '">' +
-            '<div class="project__media"><img src="' + esc(p.image || "assets/img/placeholder.svg") + '" alt="' + esc(p.title) + ' preview" loading="lazy"></div>' +
+            '<div class="project__media">' +
+           
+            (
+                p.images && p.images.length
+                    ? p.images.map(function(img, index){
+                        return '<img class="project-slide' +
+                               (index === 0 ? ' active' : '') +
+                               '" src="' + esc(img) +
+                               '" alt="' + esc(p.title) +
+                               ' preview" loading="lazy">';
+                      }).join("")
+                    : '<img class="project-slide active" src="' +
+                      esc(p.image || "assets/img/placeholder.svg") +
+                      '" alt="' + esc(p.title) +
+                      ' preview" loading="lazy">'
+            )
+            
+            +
+
+            '</div>' +
             '<div class="project__body">' +
               '<h3 class="project__title">' + esc(p.title) + "</h3>" +
               '<p class="project__desc">' + esc(p.description) + "</p>" +
