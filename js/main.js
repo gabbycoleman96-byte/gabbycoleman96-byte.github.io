@@ -1157,5 +1157,36 @@
     });
     const openBtn = document.getElementById("cmdk-open");
     if (openBtn) openBtn.addEventListener("click", open);
-  })();
+})();
+
+// ==============================
+// Project Image Slideshow
+// ==============================
+
+function initProjectSlideshows() {
+  document.querySelectorAll(".project__media img").forEach(function(img) {
+
+    const article = img.closest(".project");
+    if (!article) return;
+
+    const title = article.querySelector(".project__title")?.textContent;
+
+    const project = (SITE.projects.items || []).find(function(p) {
+      return p.title === title;
+    });
+
+    if (!project || !project.images || project.images.length < 2) return;
+
+    let current = 0;
+
+    setInterval(function() {
+      current = (current + 1) % project.images.length;
+      img.src = project.images[current];
+    }, 6000);
+
+  });
+}
+
+window.addEventListener("load", initProjectSlideshows);
+
 })();
