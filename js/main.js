@@ -1286,4 +1286,5 @@ function initProjectSlideshows() {
 
 }
 
-window.addEventListener("load",initProjectSlideshows); })
+window.addEventListener("load",initProjectSlideshows); 
+})();
