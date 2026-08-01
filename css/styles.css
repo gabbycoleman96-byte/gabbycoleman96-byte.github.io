@@ -869,3 +869,42 @@ textarea:focus-visible, [tabindex]:focus-visible {
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #555; word-break: break-all; }
   .project:hover, .post:hover { transform: none; }
 }
+
+/* ===========================
+   Lightbox
+=========================== */
+
+.lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:9999;
+}
+
+.lightbox.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.lightbox img{
+    max-width:95%;
+    max-height:90%;
+    border-radius:12px;
+    box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+
+.lightbox__close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+    user-select:none;
+}
