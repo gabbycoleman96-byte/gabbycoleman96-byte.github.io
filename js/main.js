@@ -1290,6 +1290,8 @@
 
 function initProjectSlideshows() {
 
+    console.log("Slideshow initialized");
+   
     const lightbox = document.getElementById("lightbox");
     const lightboxImage = document.getElementById("lightbox-image");
     const close = document.querySelector(".lightbox__close");
