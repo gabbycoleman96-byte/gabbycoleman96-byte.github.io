@@ -1204,7 +1204,7 @@ function initProjectSlideshows() {
     });
 
      img.addEventListener("click", function () {
-      window.open(img.src, "_blank");
+      window.open(img.src, "_blank", "noopener,noreferrer");
     });
 
   });
