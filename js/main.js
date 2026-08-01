@@ -391,7 +391,7 @@
            }).join("");
    
          return (
-           '<article class="project">' +
+           '<article class="project ' + (p.featured ? "project--featured" : "") + '">' +
    
              '<div class="project__media">' +
    
