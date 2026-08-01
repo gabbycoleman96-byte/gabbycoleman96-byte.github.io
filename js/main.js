@@ -1314,19 +1314,26 @@ function initProjectSlideshows() {
 
     document.querySelectorAll(".project").forEach(function(article){
 
-        observer.observe(article);
+       console.log("Found project");
+
+        setupProject(article);
 
     });
 
     function setupProject(article){
 
         const img = article.querySelector(".project-slide");
-        if(!img) return;
+        if(!img){
+           console.log("No image");
+           return;
+        }
 
         const project =
             SITE.projects.items[
                 Number(article.dataset.project)
             ];
+        console.log("Matched project:", project);
+        console.log("Setting up:", project.title);
 
         if(!project) return;
 
@@ -1349,6 +1356,7 @@ function initProjectSlideshows() {
         }
 
         const dots = article.querySelectorAll(".project-dot");
+        console.log("Dots found:", dots.length);
 
         let current = 0;
         let timer;
