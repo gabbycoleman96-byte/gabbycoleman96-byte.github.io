@@ -355,86 +355,87 @@
     },
 
     projects: function (d) {
-      const items = d.items || [];
-
-      // Build the filter bar from the union of every project's tags. It only
-      // shows when it's actually useful (opt-in AND at least two tags exist).
-      let filterBar = "";
-      if (d.filters !== false) {
-        const seen = {};
-        const uniqueTags = [];
-        items.forEach(function (p) {
-          (p.tags || []).forEach(function (t) {
-            const key = String(t).toLowerCase();
-            if (!seen[key]) { seen[key] = true; uniqueTags.push(t); }
-          });
-        });
-        if (uniqueTags.length > 1) {
-          filterBar = '<div class="projects__filters reveal" role="group" aria-label="Filter projects by tag">' +
-            '<button class="filter-btn is-active" type="button" data-filter="*" aria-pressed="true">All</button>' +
-            uniqueTags.map(function (t) {
-              return '<button class="filter-btn" type="button" data-filter="' + esc(String(t).toLowerCase()) +
-                '" aria-pressed="false">' + esc(t) + "</button>";
-            }).join("") +
-          "</div>";
-        }
-      }
-
-      const grid = '<div class="projects__grid reveal">' + items.map(function (p) {
-        const linksHtml = (p.links || [])
-          .filter(function (l) { return l.url; })
-          .map(function (l) {
-            return ('<a class="btn btn--ghost btn--small" href="' + esc(l.url) + '"' + extAttr(l.url) + ">" +
-              esc(l.label) + (l.type === "source" ? icon("github") : icon("external-link")) + "</a>");
-          }).join("");
-        const tagKeys = (p.tags || []).map(function (t) { return String(t).toLowerCase(); }).join("|");
-        return (
-          '<article class="project ' + (p.featured ? "project--featured" : "") + '" data-tags="' + esc(tagKeys) + '">' +
-            '<div class="project__media">' +
-
-            (
-                '<img class="project-slide active" src="' +
-               esc((p.images && p.images.length ? p.images[0] : p.image) || "assets/img/placeholder.svg") +
-               '" alt="' + esc(p.title) +
-               ' preview" loading="lazy">'
-                    }).join("")
-                    : '<img class="project-slide active" src="' +
-                      esc(p.image || "assets/img/placeholder.svg") +
-                      '" alt="' + esc(p.title) +
-                      ' preview" loading="lazy">'
-            )
-            
-            +
-            
-            (
-                p.images && p.images.length > 1
-                    ? '<div class="project-dots">' +
-                        p.images.map(function(_,index){
-                            return '<span class="project-dot' +
-                                   (index===0?' active':'') +
-                                   '" data-index="'+index+'"></span>';
-                        }).join("")
-                      + '</div>'
-                    : ''
-            )
-            
-            +
-            
-            '</div>' +
-
-            '</div>' +
-            '<div class="project__body">' +
-              '<h3 class="project__title">' + esc(p.title) + "</h3>" +
-              '<p class="project__desc">' + esc(p.description) + "</p>" +
-              (p.tags && p.tags.length ? '<div class="project__tags">' + p.tags.map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>" : "") +
-              (linksHtml ? '<div class="project__links">' + linksHtml + "</div>" : "") +
-            "</div>" +
-          "</article>"
-        );
-      }).join("") + "</div>";
-
-      return filterBar + grid;
-    },
+   
+     const items = d.items || [];
+   
+     return '<div class="projects__grid reveal">' +
+   
+       items.map(function (p) {
+   
+         const image = (p.images && p.images.length)
+           ? p.images[0]
+           : (p.image || "assets/img/placeholder.svg");
+   
+         const dots = (p.images && p.images.length > 1)
+           ? '<div class="project-dots">' +
+               p.images.map(function(_, i){
+                 return '<span class="project-dot' +
+                   (i === 0 ? ' active' : '') +
+                   '" data-index="' + i + '"></span>';
+               }).join("") +
+             '</div>'
+           : "";
+   
+         const linksHtml = (p.links || [])
+           .filter(function (l) { return l.url; })
+           .map(function (l) {
+             return '<a class="btn btn--ghost btn--small" href="' +
+               esc(l.url) + '"' +
+               extAttr(l.url) +
+               '>' +
+               esc(l.label) +
+               (l.type === "source"
+                 ? icon("github")
+                 : icon("external-link")) +
+               '</a>';
+           }).join("");
+   
+         return (
+           '<article class="project">' +
+   
+             '<div class="project__media">' +
+   
+               '<img class="project-slide active" ' +
+               'src="' + esc(image) + '" ' +
+               'alt="' + esc(p.title) + ' preview" ' +
+               'loading="lazy">' +
+   
+               dots +
+   
+             '</div>' +
+   
+             '<div class="project__body">' +
+   
+               '<h3 class="project__title">' +
+                 esc(p.title) +
+               '</h3>' +
+   
+               '<p class="project__desc">' +
+                 esc(p.description) +
+               '</p>' +
+   
+               (p.tags && p.tags.length
+                 ? '<div class="project__tags">' +
+                     p.tags.map(function(t){
+                       return '<span class="tag">' + esc(t) + '</span>';
+                     }).join("") +
+                   '</div>'
+                 : "") +
+   
+               '<div class="project__links">' +
+                 linksHtml +
+               '</div>' +
+   
+             '</div>' +
+   
+           '</article>'
+         );
+   
+       }).join("") +
+   
+     '</div>';
+   
+   },
 
     writing: function (d) {
       return '<div class="writing__grid reveal">' + (d.items || []).map(function (post) {
@@ -1286,5 +1287,3 @@ function initProjectSlideshows() {
 }
 
 window.addEventListener("load",initProjectSlideshows);
-
-})();
