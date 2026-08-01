@@ -443,7 +443,7 @@ textarea:focus-visible, [tabindex]:focus-visible {
 .project__media img{ cursor:pointer; }
 .project:hover .project__media img { transform: scale(1.04); }
 .project__media{ position:relative; }
-.project-dots{ position:absolute; left:50%; bottom:12px; transform:translateX(-50%); display:flex; gap:8px; z-index:100; }
+.project-dots{ position:absolute; left:50%; bottom:16px; transform:translateX(-50%); display:flex; gap:8px; z-index:100; }
 .project-dot{ width:22px; height:4px; border-radius:999px; background:#999; transition:.3s; }
 .project-dot.active{ width:32px; background:var(--accent); }
 .project__body { padding: 1.2rem; display: flex; flex-direction: column; gap: 0.7rem; flex: 1; }
