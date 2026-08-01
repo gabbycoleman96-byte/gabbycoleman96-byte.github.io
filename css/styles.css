@@ -498,44 +498,6 @@ textarea:focus-visible, [tabindex]:focus-visible {
 }
 .gallery__item:hover .gallery__caption, .gallery__item:focus-visible .gallery__caption { opacity: 1; }
 
-.lightbox {
-  position: fixed; inset: 0; z-index: 300; display: grid; place-items: center;
-  padding: clamp(1rem, 4vw, 3rem); background: rgba(2, 6, 23, 0.86); backdrop-filter: blur(4px);
-}
-.lightbox[hidden] { display: none; }
-.lightbox__figure { margin: 0; max-width: 100%; max-height: 100%; display: flex; flex-direction: column; gap: 0.6rem; }
-.lightbox__img {
-  max-width: 100%; max-height: 82vh; object-fit: contain; margin-inline: auto;
-  border-radius: var(--radius-sm); box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-}
-.lightbox__caption { color: #e2e8f0; text-align: center; font-size: 0.9rem; }
-.lightbox__close{
-    position:absolute;
-    top:24px;
-    right:24px;
-
-    width:72px;
-    height:72px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    font-size:56px;
-    line-height:1;
-
-    cursor:pointer;
-
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.15);
-
-    color:white;
-}
-.lightbox__close:hover { background: rgba(255, 255, 255, 0.22); }
-.lightbox__close svg { width: 1.3rem; height: 1.3rem; }
-
 /* =====================================================================
    16. WRITING
    ===================================================================== */
@@ -923,22 +885,26 @@ textarea:focus-visible, [tabindex]:focus-visible {
 
 .lightbox__close{
     position:absolute;
-    top:20px;
-    right:20px;
+    top:24px;
+    right:24px;
 
-    width:56px;
-    height:56px;
+    width:64px;
+    height:64px;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display:grid;
+    place-items:center;
 
+    padding:0;
+    margin:0;
+
+    border:none;
     border-radius:50%;
-    background:rgba(255,255,255,.08);
 
-    color:white;
-    font-size:42px;
-    line-height:1;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+
+    font-size:48px;
+    line-height:0;
 
     cursor:pointer;
     user-select:none;
