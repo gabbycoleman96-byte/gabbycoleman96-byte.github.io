@@ -1203,9 +1203,32 @@ function initProjectSlideshows() {
 
     });
 
-     img.addEventListener("click", function () {
-      window.open(img.src, "_blank", "noopener,noreferrer");
-    });
+    const lightbox = document.getElementById("lightbox");
+   const lightboxImage = document.getElementById("lightbox-image");
+   const close = document.querySelector(".lightbox__close");
+   
+   img.addEventListener("click",function(){
+   
+       lightboxImage.src = img.src;
+       lightbox.classList.add("active");
+   
+   });
+   
+   close.addEventListener("click",function(){
+   
+       lightbox.classList.remove("active");
+   
+   });
+   
+   lightbox.addEventListener("click",function(e){
+   
+       if(e.target===lightbox){
+   
+           lightbox.classList.remove("active");
+   
+       }
+   
+   });
 
   });
 
