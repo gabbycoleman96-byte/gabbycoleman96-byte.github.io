@@ -389,9 +389,13 @@
                  : icon("external-link")) +
                '</a>';
            }).join("");
+
+          const tagKeys = (p.tags || [])
+            .map(function(t){ return String(t).toLowerCase(); })
+            .join("|");
    
          return (
-           '<article class="project ' + (p.featured ? "project--featured" : "") + '">' +
+           '<article class="project ' + (p.featured ? "project--featured" : "") + '">' + '" data-tags="' + esc(tagKeys) + '">' +
    
              '<div class="project__media">' +
    
