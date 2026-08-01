@@ -399,6 +399,17 @@ esc((p.images && p.images[0]) || p.image || "assets/img/placeholder.svg") +
             
             +
 
+           (p.images && p.images.length > 1
+    ? '<div class="project-dots">' +
+      p.images.map(function(_, i){
+          return '<span class="project-dot'+
+                 (i===0?' active':'')+
+                 '" data-index="'+i+'"></span>';
+      }).join("") +
+      '</div>'
+    : '')
++
+
             '</div>' +
             '<div class="project__body">' +
               '<h3 class="project__title">' + esc(p.title) + "</h3>" +
