@@ -314,7 +314,7 @@ const SITE = {
         featured: true,
         title: "Spotify Listening Analytics Dashboard",                               // 👉 EDIT
         description:                                                  // 👉 EDIT
-          "Built an end-to-end analytics platform that transforms over 800,000 raw Spotify listening events into interactive business intelligence dashboards. By combining Python, MySQL, and Tableau, the project uncovers engagement trends across artists, albums, genres, and listening behavior — demonstrating how raw event data can be structured, queried, and visualized to surface meaningful patterns.",
+          "Built an end-to-end analytics platform that transforms over 800,000 raw Spotify listening events into interactive dashboards using Python, MySQL, and Tableau. The analysis surfaces which artists and genres earn long-term listening loyalty versus short-lived spikes. That's the same signal streaming platforms use to decide what to recommend next and where to put marketing spend.",
         images: [
              "assets/img/Spotify Home Page.png",
              "assets/img/Spotify The Headliners.png"
@@ -329,7 +329,7 @@ const SITE = {
         featured: false,
         title: "Genomic Data Analysis",
         description:
-          "Developed a SQL-powered analytics solution to identify inheritance patterns within more than two million genomic records. Optimized complex queries and custom analytical tables to transform large-scale biological data into structured, queryable insights that support genetic research workflows.",
+          "Developed a SQL-powered analytics solution to identify inheritance patterns within more than one million genomic records. Queries and analytical tables were optimized to make large-scale variant data fast to explore instead of slow to query, which is what determines whether a research team can actually iterate on hypotheses in real time or gets stuck waiting.",
         image: "assets/img/density_column_chart.png",
         tags: ["Genome", "MySQL", "Power BI", "Data Cleaning"],
         links: [
@@ -341,7 +341,7 @@ const SITE = {
         featured: false,
         title: "HR Attrition Analysis",
         description:
-          "Designed an HR analytics dashboard to help identify the workforce trends driving employee turnover. Combined SQL and Tableau to surface key retention metrics, demographic patterns, and attrition risk factors, enabling data-informed hiring and retention decisions.",
+          "Designed an HR analytics dashboard using SQL and Tableau to identify the workforce trends driving employee turnover. The analysis isolates exactly which departments, tenure ranges, and demographic segments carry the highest attrition risk, so leadership knows where to focus retention budget instead of applying blanket policies across the whole organization.",
         image: "assets/img/dashboard_page2.png",
         tags: ["Power BI", "MySQL"],
         links: [
@@ -353,7 +353,7 @@ const SITE = {
         featured: false,
         title: "Exoplanet Data Analysis",
         description:
-          "Built an analytics workflow to transform 6,000+ astronomical observations into visualizations that reveal relationships between planetary size, composition, and orbital behavior. Demonstrates how thoughtful data cleaning, aggregation, and visual design can surface meaningful patterns even within tightly scoped scientific datasets.",
+          "Built an analytics workflow to transform 6,000+ astronomical observations into interactive visualizations that reveal relationships between planetary size, composition, and orbital behavior. The scatter plot analysis flags which planets behave as statistical outliers versus which follow expected patterns, the same anomaly-detection approach used to prioritize which data points are worth a closer look in any dataset.",
         image: "assets/img/scatter_plot.png",
         tags: ["Tableau", "MySQL", "Data Cleaning"],
         links: [
